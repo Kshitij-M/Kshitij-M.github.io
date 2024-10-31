@@ -1,0 +1,21 @@
+theme: jekyll-theme-minimal
+
+title: Kshitij Mohan's Journal
+tagline: [Software Engineer | Learner | Raconteur | Avid Traveller | Father]
+description: [Software Engineer | Learner | Raconteur | Avid Traveller | Father]
+author: Kshitij Mohan
+
+email: kshitijmhn@gmail.com
+phone: +91-991-029-5298
+
+kaggle: https://kaggle.com/kshitijmohan
+linkedinurl: https://www.linkedin.com/in/kshitij-mhn
+githurl: https://github.com/Kshitij-M
+twitterurl: ""
+stackoverflowurl: ""
+
+repository: Kshitij-M/Kshitij-M.github.io
+google_analytics: UA-144488030-1
+
+plugins:
+  - jekyll-seo-tag

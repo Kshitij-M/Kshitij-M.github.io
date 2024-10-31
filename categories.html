@@ -1,0 +1,32 @@
+---
+layout: default
+title:  Categories
+permalink: /categories
+---
+<style type="text/css">
+	.categories-group-title h5 {
+		text-transform: capitalize;
+		margin: 0;
+	}
+
+	.categories-group-title {
+		    font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+</style>
+<div class="categories-list">
+{% for cat in site.categories %}
+  <ul class="categories-group">
+    {% capture cat_name %}{{ cat | first }}{% endcapture %}
+    <li class="categories-group-title" id="{{ cat_name | slugize }}">
+    	<h5>{{ cat_name }}</h5>
+	    <ul>
+	    	{% for post in site.categories[cat_name] %}
+		      <li>
+		      	<a class="categories-item-title" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
+		      </li>
+		    {% endfor %}
+	    </ul>
+    </li>
+  </ul>
+{% endfor %}
+</div>
