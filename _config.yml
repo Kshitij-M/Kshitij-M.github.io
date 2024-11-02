@@ -21,7 +21,7 @@ repository               : "Kshitij-M/Kshitij-M.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "favicon.png"
+  avatar           : "profile.png"
   name             : "Kshitij Mohan"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
