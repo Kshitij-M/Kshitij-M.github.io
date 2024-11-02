@@ -12,7 +12,7 @@ title                    : "Kshitij Mohan"
 title_separator          : "-"
 name                     : &name "Kshitij Mohan"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://kshitij-m.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Kshitij-M/Kshitij-M.github.io"
 
