@@ -1,49 +1,73 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+excerpt: "Discover my journey in Data Science and AI"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+<div style="text-align: center;">
+  <h1>Hey there!</h1>
+</div>
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+<div style="font-size: 1.2em; text-align: center; margin-bottom: 20px;">
+  <p>👋 I’m Kshitij Mohan, a Data Scientist with a passion for the frontiers of Generative AI, NLP, and Large Language Models (LLMs).</p>
+  <p>If you’re reading this, you’re about to step into my world—where data transforms, models evolve, and each machine learning puzzle brings us closer to the language of tomorrow.</p>
+</div>
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+<div style="text-align: center; font-style: italic; margin: 30px 0;">
+  <blockquote>"The pursuit itself is the answer." - Thomas Jefferson</blockquote>
+</div>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<p style="text-align: center;">I’m driven by that notion: curiosity, the thrill of discovery, and a bit of uncharted magic in every project.</p>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+---
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+## 🌱 The Beginning of a Language Journey
 
-**Markdown generator**
+It all started with a fascination for language—not just human language but the structured intricacies machines could learn. Natural Language Processing (NLP) became my gateway, transforming words into data points, unraveling how machines could understand and even “speak” back to us.
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+---
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+## 🧠 The Evolution of Communication at IIIT Delhi
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+At **IIIT Delhi**, my adventures expanded into multi-agent reinforcement learning. Imagine AI agents in a room “learning to talk,” collaborate, even debate. It was like watching evolution—each agent growing with every decision, as if language itself were evolving right there on my screen.
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+---
+
+## 🏥 Transforming Curiosity into Impact at Siro Clinpharm
+
+At **Siro Clinpharm**, I turned curiosity into action. I dove into the healthcare space, deploying an internal search engine that became a “clinical librarian,” sorting through mountains of data to surface the critical insights. I fine-tuned LLMs on clinical data, optimizing them to deliver fast, privacy-preserving answers on serverless infrastructure. I still remember the awe of that first clinical summary generated with perfect clinical lingo!
+
+---
+
+## 🔍 Innovating with Knowledge Graphs at Sirovate Technologies
+
+At **Sirovate Technologies**, I discovered the power of knowledge graphs for structuring unstructured clinical data. With this graph, relationships between symptoms, side effects, diseases, and drugs became immediately accessible. By linking the graph with LLMs, we unlocked unprecedented insights; the LLM, drawing on this structured data, offered deep, nuanced answers beyond human reach. The hybrid model that I created transformed complex data into a powerful resource for predictive analytics and clinical decision support, showing me how knowledge graphs and LLMs together could revolutionize healthcare intelligence.
+
+---
+
+## 🌐 Expanding the Frontiers at Quandle Labs
+
+Now at **Quandle Labs**, I’ve uncovered a new frontier with MDSim360. Proteins, the building blocks of life, hold secrets that could transform our understanding of health, disease, and drug efficacy. But the tools to explore these biomolecules have long been limited by high computational demands and technical complexity. Here at Quandle, we’re determined to break down those barriers.
+
+**MDSim360** isn’t just another MD simulation tool; it’s an invitation to researchers, from undergraduates to seasoned scientists, to delve deeper into molecular dynamics without worrying about compute resources. To address this gap, we’re creating a fully online MD simulation platform that removes compute-intensive barriers and simplifies the simulation process. By moving the entire workflow online, users can access and run MD simulations without needing substantial computational hardware.
+
+But MDSim360 is more than just accessibility—it’s about depth and empowerment. We’re integrating modular analysis tools at every stage of the simulation, enabling users to perform in-depth analyses without specialized software or scripts. By tracking interactions, binding energies, and stability metrics in real time, we’re making it possible to observe biomolecular subtleties that were previously out of reach. Our platform offers a full suite of analytics that would otherwise require deep technical know-how, opening doors for a new generation of researchers to push the boundaries of molecular science.
+
+As we prepare for MDSim360's launch, the anticipation is palpable. Soon, anyone curious about molecular science will have MD simulations as a seamless part of their research toolkit. With each simulation, they won’t just see the science—they’ll be empowered to drive it forward.
+
+---
+
+<div style="text-align: center; font-size: 1.2em; font-weight: bold; margin-top: 40px;">
+  Join the Journey
+</div>
+
+<p style="text-align: center; margin: 20px 0;">
+  This is only the beginning. My story is about pushing boundaries, bridging the gap between data science and real-world challenges, and finding the extraordinary in the everyday.
+</p>
+
+<p style="text-align: center; font-weight: 600;">
+  If you’re here to explore the evolving story of language and AI, welcome aboard. Together, let’s see just how deep this rabbit hole goes.
+</p>
