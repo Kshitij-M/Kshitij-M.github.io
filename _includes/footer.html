@@ -1,45 +1,25 @@
-<footer style="text-align: center;">
-	<p class="icons-holder">
-	  {% if site.kaggle %}
-	  <a href="{{ site.kaggle }}" target="_blank">
-		<img src="{{ site.url }}/assets/images/icons/kaggle.png" alt="Kaggle">
-	  </a>
-	  |
-	  {% endif %}
-  
-	  {% if site.resumeurl %}
-	  <a href="{{ site.resumeurl }}" target="_blank">
-		<img src="{{ site.url }}/assets/images/icons/resume.png" alt="Resume">
-	  </a>
-	  |
-	  {% endif %}
-  
-	  {% if site.linkedinurl %}
-	  <a href="{{ site.linkedinurl }}" target="_blank">
-		<img src="{{ site.url }}/assets/images/icons/linkedin.png" alt="LinkedIn">
-	  </a>
-	  |
-	  {% endif %}
-  
-	  {% if site.githurl %}
-	  <a href="{{ site.githurl }}" target="_blank">
-		<img src="{{ site.url }}/assets/images/icons/github.png" alt="GitHub">
-	  </a>
-	  |
-	  {% endif %}
-  
-	  {% if site.twitterurl %}
-	  <a href="{{ site.twitterurl }}" target="_blank">
-		<img src="{{ site.url }}/assets/images/icons/twitter.png" alt="Twitter">
-	  </a>
-	  |
-	  {% endif %}
-  
-	  {% if site.stackoverflowurl %}
-	  <a href="{{ site.stackoverflowurl }}" target="_blank">
-		<img src="{{ site.url }}/assets/images/icons/stack-overflow.png" alt="Stack Overflow">
-	  </a>
-	  {% endif %}
-	</p>
-  </footer>
-  
+{% include base_path %}
+
+{% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    {% if site.data.ui-text[site.locale].follow_label %}
+      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+    {% endif %}
+    {% if site.author.github %}
+      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    {% endif %}
+    {% if site.author.bitbucket %}
+      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+    {% endif %}
+    {% if site.atom_feed.hide != true %}
+    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+    {% endif %}
+  </ul>
+</div>
+{% endif %}
+
+<div class="page__footer-copyright">
+  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated {{ "now" | date: '%Y-%m-%d' %}}
+</div>
